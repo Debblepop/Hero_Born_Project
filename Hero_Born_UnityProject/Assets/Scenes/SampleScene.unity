@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: -10.27, y: 1, z: 9.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1621,7 +1621,7 @@ PrefabInstance:
     - target: {fileID: 1539175519385683654, guid: 0b066969da206a44ab18ca8b7800862d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.93
+      value: -10.312
       objectReference: {fileID: 0}
     - target: {fileID: 1539175519385683654, guid: 0b066969da206a44ab18ca8b7800862d,
         type: 3}
@@ -1631,7 +1631,7 @@ PrefabInstance:
     - target: {fileID: 1539175519385683654, guid: 0b066969da206a44ab18ca8b7800862d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.2
+      value: 10.603
       objectReference: {fileID: 0}
     - target: {fileID: 1539175519385683654, guid: 0b066969da206a44ab18ca8b7800862d,
         type: 3}
@@ -1671,7 +1671,7 @@ PrefabInstance:
     - target: {fileID: 4921011403140516658, guid: 0b066969da206a44ab18ca8b7800862d,
         type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: Health_Pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b066969da206a44ab18ca8b7800862d, type: 3}
