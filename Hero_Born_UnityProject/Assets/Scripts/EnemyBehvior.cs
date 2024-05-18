@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class EnemyBehvior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.name == "Player")
+        {
+            Debug.Log("Player detected - attack!");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit(Collider other)
     {
-        
+      if (other.name == "Player")
+      {
+            Debug.Log("Player out of range, resume patrol");
+      }
     }
 }

@@ -11,6 +11,9 @@ public class PlayerBehavoir : MonoBehaviour
     private float _hInput;
 
     private Rigidbody _rb;
+
+    public float JumpVelocity = 5f;
+    private bool _isJumping;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +30,19 @@ public class PlayerBehavoir : MonoBehaviour
         this.transform.Translate(Vector3.forward * _vInput * Time.deltaTime);
         this.transform.Rotate(Vector3.up * _hInput * Time.deltaTime);
         */
+
+        _isJumping |= Input.GetKeyDown(KeyCode.J);
     }
 
     void FixedUpdate()
     {
+        if (_isJumping)
+        {
+            _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
+        }
+
+        _isJumping = false;
+
         Vector3 rotation = Vector3.up * _hInput;
 
         Quaternion angleRot = Quaternion.Euler(rotation * Time.fixedDeltaTime);
